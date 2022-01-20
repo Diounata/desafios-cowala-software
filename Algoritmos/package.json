@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev src/validade.ts",
+    "dev": "ts-node-dev src/faxina.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
