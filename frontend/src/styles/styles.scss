@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Roboto';
+}
+
+header {
+  display: flex;
+  align-items: center;
+
+  height: 7.5rem;
+  padding: 0 1.75rem;
+  background: var(--dark-blue);
+}
+
+.container {
+  height: calc(100vh - 7.5rem);
+  padding: 4.31rem 7.6875rem;
+
+  background: var(--background);
+
+  > section {
+    display: grid;
+    place-items: center;
+
+    height: 90%;
+    padding: 2.75rem 0;
+
+    background: var(--content-background);
+    box-shadow: 0px 4px 4px 0px #00000040;
+  }
+}
+
+:root {
+  --container-background: #e5e5e5;
+  --content-background: #ededed;
+  --dark-blue: #0a1633;
+}
