@@ -1,4 +1,13 @@
+import axios from 'axios';
+import { useState } from 'react';
+
 export function App() {
+  const [userIP, setUserIP] = useState('');
+
+  function getUserIP(): void {
+    axios.get('https://ip-fast.com/api/ip/').then(({ data }) => setUserIP(data));
+  }
+
   return (
     <>
       <header>
@@ -23,10 +32,10 @@ export function App() {
 
           <article className="ip-input-container">
             <label>
-              Meu IP <input type="text" disabled />
+              Meu IP <input type="text" value={userIP} disabled />
             </label>
 
-            <button>Encontrar IP</button>
+            <button onClick={getUserIP}>Encontrar IP</button>
           </article>
 
           <footer className="button-container">
