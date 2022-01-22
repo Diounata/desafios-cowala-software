@@ -14,6 +14,11 @@ function cleanUndefinedProps(object: {}) {
 }
 
 const obj = { fizz: 'buzz', foo: null, bar: 42, test: undefined };
-const cleanedObj = cleanUndefinedProps(obj);
+const cleanedObj = () => {
+  const newObj = cleanUndefinedProps(obj);
 
-console.log(cleanedObj);
+  console.log(newObj);
+  return newObj;
+};
+
+export default cleanedObj;

@@ -43,6 +43,12 @@ const users = [
   { name: 'Raul', isMe: false, isAdmin: true },
   { name: 'Ana', isMe: false, isAdmin: false },
 ];
-const classifiedUsers = classifyUsers(users);
 
-console.log(classifiedUsers);
+const classifiedUsers = () => {
+  const newUsers = classifyUsers(users);
+
+  console.log(newUsers);
+  return newUsers;
+};
+
+export default classifiedUsers;

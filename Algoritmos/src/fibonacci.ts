@@ -10,9 +10,11 @@ function getFibonacciNumber(number: number): number[] {
     }
   }
 
+  console.log(fibonacciArray);
+
   return fibonacciArray;
 }
 
-const fibonacciNumber = getFibonacciNumber(6);
+const result = () => getFibonacciNumber(6);
 
-console.log(fibonacciNumber);
+export default result;

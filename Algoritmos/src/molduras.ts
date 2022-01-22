@@ -40,5 +40,6 @@ function getFrame(horizon: number, vertical: number): void {
   displayHorizonString(horizon);
 }
 
-//       h, v
-getFrame(1, 3);
+const result = () => getFrame(9, 6);
+
+export default result;

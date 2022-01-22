@@ -33,6 +33,10 @@ const dateValidation: DateValidationProps = {
 const isDateExpired = validadeDate(dateValidation);
 const date = new Date(dateValidation.dateParam);
 
-console.log(`Date: ${formatDate(date)}`);
-console.log(`Days to expirate after this date: ${dateValidation.daysToExpiration}d`);
-console.log(`Is expired? ${isDateExpired}`);
+function displayResult() {
+  console.log(`Date: ${formatDate(date)}`);
+  console.log(`Days to expirate after this date: ${dateValidation.daysToExpiration}d`);
+  console.log(`Is expired? ${isDateExpired}`);
+}
+
+export default displayResult;
