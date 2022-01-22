@@ -68,11 +68,11 @@ header {
       height: 44px;
       padding: 0 0.5rem;
 
-      background: #ffffff;
+      background: #fff;
       border: none;
       font-weight: 400;
 
-      transition: 0.05s;
+      transition: 0.05s all;
       outline: none;
 
       &:hover,
@@ -149,7 +149,7 @@ header {
 button {
   border: none;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.2s all;
 
   &:hover {
     filter: brightness(80%);
